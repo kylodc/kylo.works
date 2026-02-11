@@ -48,7 +48,7 @@ export default function Home() {
     const timer = setTimeout(handleTyping, typingSpeed);
     return () => clearTimeout(timer);
 
-  }, [charIndex, isDeleting, textIndex, roles]);
+  }, [charIndex, isDeleting, textIndex]);
 
   return (
     <div className="page-wrapper">
