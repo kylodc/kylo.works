@@ -3,6 +3,12 @@ import { useNavigate } from 'react-router-dom';
 import './Home.css';
 import portrait from './assets/me-portrait.PNG'; // save your image with this name in src/assets
 
+const roles = [
+  "computer engineer.",
+  "builder.",
+  "problem solver."
+];
+
 export default function Home() {
   const navigate = useNavigate();
   const [text, setText] = useState('');
@@ -10,11 +16,7 @@ export default function Home() {
   const [textIndex, setTextIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
 
-  const roles = [
-    "computer engineer.",
-    "builder.",
-    "problem solver."
-  ];
+
 
   const staticText = "Hey, I'm Kylo — a\n";
 
@@ -45,7 +47,7 @@ export default function Home() {
     const timer = setTimeout(handleTyping, typingSpeed);
     return () => clearTimeout(timer);
 
-  }, [charIndex, isDeleting, textIndex]);
+  }, [charIndex, isDeleting, textIndex, roles]);
 
   return (
     <div className="page-wrapper">
