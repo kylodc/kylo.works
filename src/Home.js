@@ -20,6 +20,7 @@ export default function Home() {
 
   const staticText = "Hey, I'm Kylo — a\n";
 
+  /* eslint-disable react-hooks/exhaustive-deps */
   useEffect(() => {
     const currentRole = roles[textIndex];
     const typingSpeed = isDeleting ? 40 : 120;
