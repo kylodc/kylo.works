@@ -319,3 +319,137 @@
         width: 100%;
     }
 }
+
+@media (max-width: 768px) {
+    /* Prevent horizontal overflow */
+    body {
+        overflow-x: hidden;
+    }
+
+    .page-wrapper {
+        overflow-x: hidden;
+        max-width: 100vw;
+    }
+
+    .contact-section {
+        padding: 1rem 1.5rem 2rem 1.5rem;
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
+
+    .contact-title {
+        font-size: 2.5rem;
+        max-width: 100%;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    .contact-content-grid {
+        gap: 2rem;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .contact-form-container {
+        padding: 1.5rem;
+        border-radius: 20px;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .form-title {
+        font-size: 1.5rem;
+        max-width: 100%;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    .form-subtitle {
+        font-size: 0.85rem;
+        margin-bottom: 1.5rem;
+        max-width: 100%;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    .contact-form {
+        gap: 1rem;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .form-group label {
+        font-size: 0.85rem;
+        margin-bottom: 0.4rem;
+        max-width: 100%;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 0.8rem 1rem 0.8rem 2.5rem;
+        font-size: 0.9rem;
+        border-radius: 10px;
+        max-width: 100%;
+        box-sizing: border-box;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    .form-group textarea {
+        padding-top: 0.8rem;
+        min-height: 100px;
+        max-width: 100%;
+    }
+
+    .submit-btn {
+        padding: 0.9rem;
+        font-size: 0.9rem;
+        margin-top: 0.8rem;
+        max-width: 100%;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    .form-note {
+        font-size: 0.75rem;
+        margin-top: 0.8rem;
+        max-width: 100%;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    .social-grid {
+        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+        gap: 0.6rem;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .social-card {
+        padding: 1rem 0.4rem;
+        border-radius: 12px;
+        max-width: 100%;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    .social-card-icon {
+        font-size: 1.3rem;
+    }
+
+    .social-card-name {
+        font-size: 0.8rem;
+        max-width: 100%;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    .social-card-action {
+        font-size: 0.65rem;
+        max-width: 100%;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+}
