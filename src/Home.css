@@ -703,6 +703,18 @@ body {
     transform: rotate(-135deg);
   }
 
+  .portfolio-navlinks {
+    display: none;
+  }
+
+  .nav-accent {
+    display: none;
+  }
+
+  .portfolio-navbar {
+    border-bottom: none !important;
+  }
+
   /* Prevent horizontal overflow */
   body {
     overflow-x: hidden;
