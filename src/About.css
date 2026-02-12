@@ -136,6 +136,14 @@
     font-size: 0.9rem;
 }
 
+.credential-list li::before {
+    content: "•";
+    color: #38e6ff;
+    position: absolute;
+    left: -1.2rem;
+    font-weight: bold;
+}
+
 @media (max-width: 900px) {
     .about-section {
         flex-direction: column;
@@ -144,6 +152,63 @@
 
     .about-image-wrap {
         order: -1;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+        padding: 2rem 1.6rem 4rem 1.6rem;
+    }
+
+    .about-content-wrapper {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-image-wrap {
+        order: -1;
+        margin-bottom: 2rem;
+    }
+
+    .about-content {
+        flex: 1;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .about-title {
+        font-size: 2.5rem;
+        margin: 0 0 1rem 0;
+    }
+
+    .about-name {
+        font-size: 1.5rem;
+        margin: 0 0 0.8rem 0;
+    }
+
+    .about-role {
+        margin: 0 0 0.5rem 0;
+        font-size: 1.1rem;
+    }
+
+    .about-description {
+        margin: 0 0 1.5rem 0;
+        font-size: 1rem;
+        max-width: 100%;
+        line-height: 1.6;
+    }
+
+    .about-stats {
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .about-card {
+        min-width: 140px;
+        padding: 0.8rem 1rem;
     }
 }
 
