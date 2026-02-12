@@ -199,7 +199,6 @@ body {
   vertical-align: middle;
 }
 
-
 /* Typewriter headline (wrapping and responsive) */
 .intro {
   display: inline-block;
@@ -561,5 +560,20 @@ body {
   .image-placeholder {
     width: 260px;
     height: 340px;
+  }
+}
+
+/* Mobile Navigation Media Query */
+@media (max-width: 768px) {
+  .mobile-menu-toggle {
+    display: block;
+  }
+
+  .portfolio-navlinks {
+    display: none;
+  }
+
+  .nav-accent {
+    display: none;
   }
 }
